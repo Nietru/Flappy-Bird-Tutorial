@@ -8,6 +8,7 @@ public class LogicScript : MonoBehaviour
 {
     public int playerScore;
     public Text scoreText;
+    public GameObject gameOverScreen; // Reference to the Game Over Screen GameObject.
 
     [ContextMenu("Increase Score")] // Adds a button to the Unity Editor in the 3 dots menu under LogicScript.
     public void addScore(int scoreToAdd)  // Function to increase the score.
@@ -19,5 +20,10 @@ public class LogicScript : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reloads the current scene.
+    }
+
+    public void gameOver()
+    {
+        gameOverScreen.SetActive(true); // Sets the Game Over Screen to active.
     }
 }
