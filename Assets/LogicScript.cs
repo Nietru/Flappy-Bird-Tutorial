@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Required for Text.
+using UnityEngine.SceneManagement;
 
 public class LogicScript : MonoBehaviour
 {
@@ -13,5 +14,10 @@ public class LogicScript : MonoBehaviour
     {
         playerScore = playerScore + scoreToAdd;
         scoreText.text = playerScore.ToString();  // ToString() converts the int to a string, because it is a text field.
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reloads the current scene.
     }
 }
