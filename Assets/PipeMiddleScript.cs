@@ -20,6 +20,10 @@ public class PipeMiddleScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        logic.addScore(); // Calls the addScore function from the LogicScript.
+        // Created new layer in Unity Editor called "Bird" that = Layer 3. 
+        if (collision.gameObject.layer == 3) // If the layer of the object that collided with the pipe is the Bird layer.
+        {
+            logic.addScore(1); // Calls the addScore function from the LogicScript.
+        }
     }
 }

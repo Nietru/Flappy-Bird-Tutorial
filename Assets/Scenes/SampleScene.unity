@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 181596895}
   m_Layer: 0
   m_Name: Logic Manager
-  m_TagString: Untagged
+  m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +325,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9007475, g: 0.9150943, b: 0.5913581, a: 0}
+  m_BackGroundColor: {r: 0.74840903, g: 0.9622642, b: 0.6309185, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 1738081385}
   - component: {fileID: 1738081384}
   - component: {fileID: 1738081383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}

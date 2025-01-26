@@ -9,9 +9,9 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
 
     [ContextMenu("Increase Score")] // Adds a button to the Unity Editor in the 3 dots menu under LogicScript.
-    public void addScore()  // Function to increase the score.
+    public void addScore(int scoreToAdd)  // Function to increase the score.
     {
-        playerScore++;
+        playerScore = playerScore + scoreToAdd;
         scoreText.text = playerScore.ToString();  // ToString() converts the int to a string, because it is a text field.
     }
 }
