@@ -24,6 +24,12 @@ public class bird_script : MonoBehaviour
         {
             myRigidbody.linearVelocity = Vector2.up * flapStrength;
         }
+
+        if (transform.position.y > 13 || transform.position.y < -13) // If the bird goes too high or too low, the game will end.
+        {
+            logic.gameOver();
+            birdIsAlive = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
